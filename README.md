@@ -2,7 +2,7 @@
 API REST pour gérer l'inscription d'utilisateur, l'authentification, l'ajout d'une voiture, voir liste voiture, commenter une voiture si connecté et voir liste voiture si connecté
 
 1.	Prérequis 
-Créer une base de donnée mysql et configurer l'application application.properties dans src/main/resources/
+Créer une base de donnée mysql et configurer l'application application.properties dans src/main/resources.
 Après avoir lancé le projet : il faut exécuter la requête suivante pour avoir les rôles des utilisateurs:
 INSERT INTO roles(name) VALUES('ROLE_USER');
 INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
