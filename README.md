@@ -10,7 +10,7 @@ INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 
 2.	Inscription à la table utilisateur avant d’avoir authentifié
-Inscription avec méthode post avec l’API : http://localhost:8080/api/auth/signup  avec un body comme la suivante :
+Inscription avec méthode post avec l’API : http://localhost:8080/api/auth/signup  utilisant un body comme la suivante :
     {
         "username": "admnin",
         "password": "12345678",
@@ -20,7 +20,7 @@ Inscription avec méthode post avec l’API : http://localhost:8080/api/auth/sig
 
 
 3.	Athentification 
-Authentification avec méthode post pour avoir le token suivant l'API: http://localhost:8080/api/auth/signin
+Authentification avec méthode post pour avoir le token suivant l'API: http://localhost:8080/api/auth/signin utilisant un body comme la suivante :
     {
         "username": "admnin",
         "password": "12345678"
@@ -28,7 +28,7 @@ Authentification avec méthode post pour avoir le token suivant l'API: http://lo
 
 
 4.	Ajouter une voiture
-Plus : Pour ajouter une voiture (RG : utilisateur non connecté), l'API utilisé est http://localhost:8080/api/createVoiture
+Plus : Pour ajouter une voiture (RG : utilisateur non connecté), l'API utilisé est http://localhost:8080/api/createVoiture utilisant un body comme la suivante :
     {
         "marque": "nissan",
         "modele": "bassé"
