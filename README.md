@@ -9,7 +9,7 @@ INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
 INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 
-2.	Inscription à la table utilisateur avant d’avoir authentifié
+2.	Inscription à la table utilisateur avant d’avoir authentifié: 
 Inscription avec méthode post avec l’API : http://localhost:8080/api/auth/signup  utilisant un body comme la suivante :
     {
         "username": "admnin",
@@ -19,24 +19,21 @@ Inscription avec méthode post avec l’API : http://localhost:8080/api/auth/sig
     }
 
 
-3.	Athentification 
-Authentification avec méthode post pour avoir le token suivant l'API: http://localhost:8080/api/auth/signin utilisant un body comme la suivante :
+3.	Authentification avec méthode post pour avoir le token suivant l'API: http://localhost:8080/api/auth/signin utilisant un body comme la suivante :
     {
         "username": "admnin",
         "password": "12345678"
     }
 
 
-4.	Ajouter une voiture
-Plus : Pour ajouter une voiture (RG : utilisateur non connecté), l'API utilisé est http://localhost:8080/api/createVoiture utilisant un body comme la suivante :
+4.	Plus : Pour ajouter une voiture (RG : utilisateur non connecté), l'API utilisé est http://localhost:8080/api/createVoiture utilisant un body comme la suivante :
     {
         "marque": "nissan",
         "modele": "bassé"
     }
     
     
-5.	Lister voiture
-L'application permet d'avoir une liste des voitures (RG : utilisateur non connecté) avec l’API: http://localhost:8080/api/voitures
+5.	L'application permet d'avoir une liste des voitures (RG : utilisateur non connecté) avec l’API: http://localhost:8080/api/voitures
 
 
 6.	Chaque utilisateur peut Commenter une voiture (utilisateur connecté) peut commenter une voiture avec l’API http://localhost:8080/api/addCommentaires  ayant le body comme la suivante:
