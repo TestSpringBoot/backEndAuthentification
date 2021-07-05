@@ -39,8 +39,7 @@ Plus : Pour ajouter une voiture (RG : utilisateur non connecté), l'API utilisé
 L'application permet d'avoir une liste des voitures (RG : utilisateur non connecté) avec l’API: http://localhost:8080/api/voitures
 
 
-6.	Commenter voiture
-Chaque utilisateur (utilisateur connecté) peut commenter une voiture avec l’API http://localhost:8080/api/addCommentaires  ayant le body comme la suivante:
+6.	Chaque utilisateur peut Commenter une voiture (utilisateur connecté) peut commenter une voiture avec l’API http://localhost:8080/api/addCommentaires  ayant le body comme la suivante:
     {
         "detailsCommentaire": "tsaraaaaaa",
         "userId": 1,
