@@ -10,7 +10,7 @@ INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 
 2.	Inscription à la table utilisateur avant d’avoir authentifié
-Inscription avec méthode post avec l’API : localhost:8080/api/auth/signup  avec un body comme la suivante :
+Inscription avec méthode post avec l’API : http://localhost:8080/api/auth/signup  avec un body comme la suivante :
     {
         "username": "admnin",
         "password": "12345678",
@@ -20,7 +20,7 @@ Inscription avec méthode post avec l’API : localhost:8080/api/auth/signup  av
 
 
 3.	Athentification 
-Authentification avec méthode post pour avoir le token suivant l'API: localhost:8080/api/auth/signin
+Authentification avec méthode post pour avoir le token suivant l'API: http://localhost:8080/api/auth/signin
     {
         "username": "admnin",
         "password": "12345678"
@@ -28,7 +28,7 @@ Authentification avec méthode post pour avoir le token suivant l'API: localhost
 
 
 4.	Ajouter une voiture
-Plus : Pour ajouter une voiture (RG : utilisateur non connecté), l'API utilisé est localhost:8080/api/createVoiture
+Plus : Pour ajouter une voiture (RG : utilisateur non connecté), l'API utilisé est http://localhost:8080/api/createVoiture
     {
         "marque": "nissan",
         "modele": "bassé"
@@ -36,11 +36,11 @@ Plus : Pour ajouter une voiture (RG : utilisateur non connecté), l'API utilisé
     
     
 5.	Lister voiture
-L'application permet d'avoir une liste des voitures (RG : utilisateur non connecté) avec l’API: localhost:8080/api/voitures
+L'application permet d'avoir une liste des voitures (RG : utilisateur non connecté) avec l’API: http://localhost:8080/api/voitures
 
 
 6.	Commenter voiture
-Chaque utilisateur (utilisateur connecté) peut commenter une voiture avec l’API localhost:8080/api/addCommentaires  ayant le body comme la suivante:
+Chaque utilisateur (utilisateur connecté) peut commenter une voiture avec l’API http://localhost:8080/api/addCommentaires  ayant le body comme la suivante:
     {
         "detailsCommentaire": "tsaraaaaaa",
         "userId": 1,
@@ -49,4 +49,4 @@ Chaque utilisateur (utilisateur connecté) peut commenter une voiture avec l’A
 
 
 7.	Liste commentaire
-Liste commentaires (RG : On ne doit pouvoir accéder aux commentaires seulement si on est connecté) : localhost:8080/api/commentaires
+Liste commentaires (RG : On ne doit pouvoir accéder aux commentaires seulement si on est connecté) : http://localhost:8080/api/commentaires
