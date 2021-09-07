@@ -36,7 +36,7 @@ Inscription avec méthode post avec l’API : http://localhost:8080/api/auth/sig
 5.	L'application permet d'avoir une liste des voitures (RG : utilisateur non connecté) avec l’API: http://localhost:8080/api/voitures
 
 
-6.	Chaque utilisateur peut Commenter une voiture (utilisateur connecté) peut commenter une voiture avec l’API http://localhost:8080/api/addCommentaires  ayant le body comme la suivante:
+6.	Chaque utilisateur peut Commenter une voiture (utilisateur connecté) peut commenter une voiture avec l’API http://localhost:8080/api/addCommentaires  ayant le body comme la suivante et en présence d'un token:
     {
         "detailsCommentaire": "tsaraaaaaa",
         "userId": 1,
@@ -45,4 +45,4 @@ Inscription avec méthode post avec l’API : http://localhost:8080/api/auth/sig
 
 
 7.	Liste commentaire
-Liste commentaires (RG : On ne doit pouvoir accéder aux commentaires seulement si on est connecté) : http://localhost:8080/api/commentaires
+Liste commentaires exigeant la présence d'un token (RG : On ne doit pouvoir accéder aux commentaires seulement si on est connecté) : http://localhost:8080/api/commentaires
