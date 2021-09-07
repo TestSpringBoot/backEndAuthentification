@@ -1,4 +1,4 @@
-# Authentification et gestion de securité API en spring boot
+# Authentification et gestion de securité API pour géstion de voiture en spring boot
 API REST pour gérer l'inscription d'utilisateur, l'authentification, l'ajout d'une voiture, voir liste voiture, commenter une voiture si connecté et voir liste voiture si connecté
 
 1.	Prérequis 
