@@ -4,9 +4,9 @@ API REST pour gérer l'inscription d'utilisateur, l'authentification, l'ajout d'
 1.	Prérequis 
 Créer une base de donnée mysql et configurer l'application application.properties dans src/main/resources.
 Après avoir lancé le projet, tous les tables sont crées et il faut exécuter manuellement la requête suivante pour avoir les rôles des utilisateurs:
-INSERT INTO roles(name) VALUES('ROLE_USER');
-INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
-INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+	INSERT INTO roles(name) VALUES('ROLE_USER');
+	INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
+	INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 
 2.	Inscription à la table utilisateur avant d’avoir authentifié: 
